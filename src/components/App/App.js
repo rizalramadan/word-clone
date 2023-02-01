@@ -1,6 +1,6 @@
+import React from "react";
 import Game from "../Game";
 import Header from "../Header";
-import GuessInput from "../GuessInput";
 
 function App() {
   return (
@@ -9,7 +9,6 @@ function App() {
 
       <div className="game-wrapper">
         <Game />
-        <GuessInput />
       </div>
     </div>
   );
