@@ -5,6 +5,10 @@ function GuessInput({ handleGuesses }) {
 
   function handleSubmitGuess(event) {
     event.preventDefault();
+    if (tentativeGuess.length !== 5) {
+      window.alert("Please enter exactly 5 characters. 💖");
+      return;
+    }
     handleGuesses(tentativeGuess);
     setTentativeGuess("");
   }
